@@ -10,7 +10,10 @@ export const SzovegKezeloFuggvenyek = function () {
                     changeSzoveg(input.target.value)
                 }} type="text" id="szovegInput" name="szoveg" />
             </div>
-            <p>{szoveg}</p>
+            <ul>
+                <li>{szoveg.length ? szoveg : "Még nem írt be egyetlen karaktert sem" }</li>
+                <li>Szöveg hossza: {szoveg.length}</li>
+            </ul>
         </>
     )
 };
